@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista</title>
+</head>
+<body>
+
+    <h1>Lista</h1>
+    <ul>
+        <li>
+            <b><a href="https://www.google.com/search?q=Variables, Numbers and Strings">1. Variables, Numbers and Strings</a></b>
+            <ul>
+                <li><a href="https://www.google.com/search?q=Variables">1.1 Variables</a></li>
+                <li><a href="https://www.google.com/search?q=Numbers">1.2 Numbers</a></li>
+                <li><a href="https://www.google.com/search?q=Strings">1.3 Strings</a></li>
+            </ul>
+        </li>
+        <li>
+            <b><a href="https://www.google.com/search?q=Data Structures">2. Data Structures</a></b> 
+            <ul>
+                <li><a href="https://www.google.com/search?q=Lists">2.1 Lists</a></li>
+                <li><a href="https://www.google.com/search?q=Dictionaries">2.2 Dictionaries</a></li>
+                <li><a href="https://www.google.com/search?q=Tuples">2.3 Tuples</a></li>
+                <li><a href="https://www.google.com/search?q=Sets">2.4 Sets</a></li>
+            </ul>
+        </li>
+        <li><b><a href="https://www.google.com/search?q=Comparison and Logic Operators">3. Comparison and Logic Operators</a></b></li>
+        <li>
+            <b><a href="https://www.google.com/search?q=Control Flow">4. Control Flow</a></b>
+            <ul>
+                <li><a href="https://www.google.com/search?q=If Condition">4.1 If Condition</a></li>
+                <li><a href="https://www.google.com/search?q=For Loop">4.2 For Loop</a></li>
+                <li><a href="https://www.google.com/search?q=While Loop">4.3 While Loop</a></li>
+            </ul>
+        </li>
+        <li><b><a href="https://www.google.com/search?q=Functions">5. Functions</a></b></li>
+    </ul>
+
+</body>
+</html>
