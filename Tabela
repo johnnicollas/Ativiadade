@@ -8,7 +8,7 @@
 
     <h1>Tabela de Composição Química</h1>
     <table border="1">
-        <caption>Composição química do regolito lunar</caption>
+        <caption>Composição química do <a href="https://www.google.com/search?q=regolitolunar">regolito lunar</a></caption>
         <thead>
             <tr>
                 <th>Composto</th>
@@ -24,43 +24,43 @@
         </thead>
         <tbody>
             <tr>
-                <td>sílica</td>
+                <td><a href="https://www.google.com/search?q=sílica">sílica</a></td>
                 <td>SiO2</td>
                 <td>45,4%</td>
                 <td>45,5%</td>
             </tr>
             <tr>
-                <td>alumina</td>
+                <td><a href="https://www.google.com/search?q=alumina">alumina</a></td>
                 <td>Al2O3</td>
                 <td>14,9%</td>
                 <td>24,0%</td>
             </tr>
             <tr>
-                <td>cal</td>
+                <td><a href="https://www.google.com/search?q=cal">cal</a></td>
                 <td>CaO</td>
                 <td>11,8%</td>
                 <td>15,9%</td>
             </tr>
             <tr>
-                <td>óxido ferroso</td>
+                <td><a href="https://www.google.com/search?q=óxidoferroso">óxido ferroso</a></td>
                 <td>FeO</td>
                 <td>14,1%</td>
                 <td>5,9%</td>
             </tr>
             <tr>
-                <td>óxido de magnésio</td>
+                <td><a href="https://www.google.com/search?q=óxidodemagnésio">óxido de magnésio</a></td>
                 <td>MgO</td>
                 <td>9,2%</td>
                 <td>7,5%</td>
             </tr>
             <tr>
-                <td>dióxido de titânio</td>
+                <td><a href="https://www.google.com/search?q=dióxidodetitânio">dióxido de titânio</a></td>
                 <td>TiO2</td>
                 <td>3,9%</td>
                 <td>0,6%</td>
             </tr>
             <tr>
-                <td>óxido de sódio</td>
+                <td><a href="https://www.google.com/search?q=óxidodesódio">óxido de sódio</a></td>
                 <td>Na2O</td>
                 <td>0,6%</td>
                 <td>0,6%</td>
