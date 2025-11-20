@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sala de Aula - Clone Simples</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5;
+        }
+    </style>
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="min-h-screen flex flex-col">
+
+ 
+    <header class="bg-white shadow-md p-4 flex justify-between items-center fixed w-full top-0 z-10">
+       
+        <div class="flex items-center space-x-4">
+            <h1 class="text-xl font-semibold text-gray-800">Sala de Aula</h1>
+        </div>
+
+        <div class="flex items-center space-x-4">
+           
+            <button class="text-gray-600 hover:text-gray-800 p-2 rounded-full hover:bg-gray-100 transition">
+                <i class="fas fa-plus text-lg"></i>
+            </button>
+           
+            <button class="text-gray-600 hover:text-gray-800 p-2 rounded-full hover:bg-gray-100 transition">
+                <i class="fas fa-ellipsis-v text-lg"></i>
+            </button>
+           
+            <div class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold text-sm cursor-pointer hover:ring-2 hover:ring-purple-400 transition">
+                C
+            </div>
+        </div>
+    </header>
+
+    <div class="flex flex-1 pt-16"> 
+
+       
+        <aside class="flex flex-col w-16 bg-white border-r border-gray-200 py-4 space-y-4 shadow-sm h-screen fixed left-0 top-16">
+            
+            <a href="#" class="flex flex-col items-center justify-center p-2 rounded-lg text-gray-700 hover:bg-gray-100 hover:text-blue-600 transition group">
+                <i class="fas fa-home text-xl"></i>
+            </a>
+            
+            <a href="#" class="flex flex-col items-center justify-center p-2 rounded-lg bg-blue-100 text-blue-600 hover:text-blue-700 transition group border-l-4 border-blue-600">
+                <i class="fas fa-folder text-xl"></i>
+            </a>
+
+            <a href="#" class="flex flex-col items-center justify-center p-2 rounded-lg text-gray-700 hover:bg-gray-100 hover:text-blue-600 transition group">
+                <i class="fas fa-cog text-xl"></i>
+            </a>
+        </aside>
+
+       
+        <main class="flex-1 p-6 sm:p-8 overflow-y-auto ml-16"> 
+            
+            <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+
+             
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 cursor-pointer overflow-hidden border border-gray-100">
+                    
+                    <div class="h-24 p-4 flex flex-col justify-between bg-teal-400/80 text-white">
+                        <h3 class="text-xl font-bold">Prog. Web</h3>
+                        <p class="text-sm font-medium opacity-80">Coding</p>
+                    </div>
+                 
+                    <div class="p-4 h-24 flex flex-col justify-end"> 
+                        <div class="flex justify-end items-center space-x-3 text-gray-500 text-lg">
+                           
+                            <button title="Progresso" class="hover:text-blue-600 p-1 rounded-full hover:bg-gray-100 transition">
+                                <i class="fas fa-chart-line"></i>
+                            </button>
+                            
+                            <button title="Mais Opções" class="hover:text-blue-600 p-1 rounded-full hover:bg-gray-100 transition">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 cursor-pointer overflow-hidden border border-gray-100">
+                    
+                    <div class="h-24 p-4 flex flex-col justify-between bg-yellow-600/60 text-white">
+                        <h3 class="text-xl font-bold">Desenv. App.</h3>
+                        <p class="text-sm font-medium opacity-80">Mobile</p>
+                    </div>
+               
+                    <div class="p-4 h-24 flex flex-col justify-end">
+                        <div class="flex justify-end items-center space-x-3 text-gray-500 text-lg">
+                            <button title="Progresso" class="hover:text-blue-600 p-1 rounded-full hover:bg-gray-100 transition">
+                                <i class="fas fa-chart-line"></i>
+                            </button>
+                            <button title="Mais Opções" class="hover:text-blue-600 p-1 rounded-full hover:bg-gray-100 transition">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+             
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 cursor-pointer overflow-hidden border border-gray-100">
+              
+                    <div class="h-24 p-4 flex flex-col justify-between bg-slate-600/80 text-white">
+                        <h3 class="text-xl font-bold">ML Manhã</h3>
+                        <p class="text-sm font-medium opacity-80">Modelos</p>
+                    </div>
+                 
+                    <div class="p-4 h-24 flex flex-col justify-end">
+                        <div class="flex justify-end items-center space-x-3 text-gray-500 text-lg">
+                            <button title="Progresso" class="hover:text-blue-600 p-1 rounded-full hover:bg-gray-100 transition">
+                                <i class="fas fa-chart-line"></i>
+                            </button>
+                            <button title="Mais Opções" class="hover:text-blue-600 p-1 rounded-full hover:bg-gray-100 transition">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 cursor-pointer overflow-hidden border border-gray-100">
+                    <div class="h-24 p-4 flex flex-col justify-between bg-rose-500/80 text-white">
+                        <h3 class="text-xl font-bold">ML Noite</h3>
+                        <p class="text-sm font-medium opacity-80">Projetos</p>
+                    </div>
+                   
+                    <div class="p-4 h-24 flex flex-col justify-end">
+                        <div class="flex justify-end items-center space-x-3 text-gray-500 text-lg">
+                            <button title="Progresso" class="hover:text-blue-600 p-1 rounded-full hover:bg-gray-100 transition">
+                                <i class="fas fa-chart-line"></i>
+                            </button>
+                            <button title="Mais Opções" class="hover:text-blue-600 p-1 rounded-full hover:bg-gray-100 transition">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </div>
