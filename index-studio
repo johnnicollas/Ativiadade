@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corpus Cult - Estúdio de Tatuagem</title>
+    <!-- Carrega a biblioteca Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Define a fonte e cores básicas */
+        body { font-family: 'Inter', sans-serif; background-color: #0d0d0d; color: #f0f0f0; }
+        /* Importa estilos externos obrigatórios para cumprir o requisito */
+    </style>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!-- 1. HEADER OBRIGATÓRIO -->
+    <header id="main-header" class="bg-black/80 shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center h-20">
+            <!-- Logo/Nome do Estúdio: Branco (cor do logo) -->
+            <a href="index.html" class="text-3xl font-bold text-white hover:text-gray-300 transition">
+                Corpus Cult
+            </a>
+
+            <!-- 2. NAV DE NAVEGAÇÃO OBRIGATÓRIA -->
+            <nav class="hidden md:block">
+                <!-- USO DE LISTA (UL) OBRIGATÓRIO -->
+                <ul class="flex space-x-6 text-lg" id="desktop-menu">
+                    <li><a href="index.html" class="hover:text-green-500 transition">Início</a></li>
+                    <li><a href="sobre.html" class="hover:text-green-500 transition">Sobre</a></li>
+                    <li><a href="#galeria" class="hover:text-green-500 transition">Galeria</a></li>
+                    <li><a href="contato.html" class="hover:text-green-500 transition">Contato</a></li>
+                </ul>
+            </nav>
+
+            <!-- Botão do Menu Mobile (para o JS) -->
+            <button id="menu-toggle" class="md:hidden text-white p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 transition">
+                <!-- Ícone SVG de menu hamburguer -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+            </button>
+        </div>
+
+        <!-- Menu Mobile (oculto por padrão, visível com JS) -->
+        <nav id="mobile-menu" class="hidden md:hidden absolute w-full bg-black/90 shadow-2xl transition-all duration-300">
+            <ul class="flex flex-col text-center py-4 space-y-2 text-xl border-t border-gray-800">
+                <li><a href="index.html" class="block py-2 hover:bg-gray-800 hover:text-green-500 transition">Início</a></li>
+                <li><a href="sobre.html" class="block py-2 hover:bg-gray-800 hover:text-green-500 transition">Sobre</a></li>
+                <li><a href="#galeria" class="block py-2 hover:bg-gray-800 hover:text-green-500 transition">Galeria</a></li>
+                <li><a href="contato.html" class="block py-2 hover:bg-gray-800 hover:text-green-500 transition">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 3. MAIN DE CONTEÚDO PRINCIPAL OBRIGATÓRIO -->
+    <main class="container mx-auto px-4 py-12 min-h-screen">
+        <!-- Seção Hero/Destaque com Imagem de Fundo (Classe 'hero-section' para o CSS) -->
+        <section class="hero-section text-center py-20 bg-gray-900 rounded-xl shadow-2xl mb-16">
+            
+            <div class="mb-4">
+                <img src="logo-icon-white.png" alt="Logo Corpus Cult" class="w-24 h-24 mx-auto rounded-full border-2 border-green-500">
+            </div>
+
+            <h1 class="text-5xl md:text-6xl font-extrabold text-white mb-4">Arte na Sua Pele</h1>
+            <p class="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">Experiência e criatividade em cada traço. Transforme sua ideia em uma arte única.</p>
+            
+            <a href="contato.html" class="inline-block bg-green-600 text-white font-bold py-3 px-8 rounded-full text-lg shadow-xl hover:bg-green-700 transition transform hover:scale-105">Agende sua Sessão</a>
+        </section>
+
+        <!-- Seção Galeria de Artistas (com uso de Imagem e lista) -->
+        <section id="galeria" class="mb-16">
+            <h2 class="text-4xl font-bold text-center mb-12 text-white">Visite nosso Instagram</h2>
+            
+            <div class="artist-card-container">
+                <!-- Card do Artista 1 -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6 max-w-lg">
+                    <!-- Imagem Obrigatória (Foto do Tatuador) -->
+                    <img src="foto-sandro.jpg" onerror="this.onerror=null;" alt="Foto de um tatuador" class="rounded-full w-36 h-36 object-cover border-4 border-green-500">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-white">Sandro Pereira</h3>
+                        <p class="text-gray-400 mb-2">Especialista em Blackwork e Realismo Preto e Cinza.</p>
+                        <!-- USO DE LISTA (UL) OBRIGATÓRIO para estilos -->
+                        <ul class="list-disc list-inside text-gray-500">
+                            <li>Realismo</li>
+                            <li>Blackwork</li>
+                            <li>Cobertura</li>
+                        </ul>
+                        <div class="mt-4">
+                            <!-- Link do Instagram do Tatuador -->
+                            <a href="https://www.instagram.com/sandropereira2?igsh=MWZtYzhnbGVuaHFpYQ==" target="_blank" class="text-green-500 hover:text-green-400 transition text-sm flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.5" y1="6.5" y2="6.5"/></svg>
+                                Seguir no Instagram
+                                
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Link Externo Obrigatório -->
+            <div class="text-center mt-10">
+                <a href="https://www.instagram.com/corpuscult?igsh=YWQwcnQyMnFwYnl4" target="_blank" class="text-gray-400 hover:text-green-500 underline transition">Veja Mais Trabalhos no Instagram Corpus Cult</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Botão Voltar ao Topo (Manipulado pelo JS) -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-green-600 text-white p-3 rounded-full shadow-lg hover:bg-green-700 transition-opacity opacity-0 invisible">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+    </button>
+
+    <!-- 4. FOOTER OBRIGATÓRIO -->
+    <footer class="bg-black/90 text-gray-400 py-8 mt-12 border-t border-gray-800">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2015 Corpus Cult. Todos os direitos reservados.</p>
+            <div class="mt-2 text-sm">
+                <a href="sobre.html" class="hover:text-green-500 mx-2">Política de Privacidade</a> | 
+                <a href="contato.html" class="hover:text-green-500 mx-2">Localização</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Carrega o script JS externo obrigatório -->
+    <script src="./js/script.js"></script>
+</body>
+</html>
+
+
+
+//Sobre.html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corpus Cult - Sobre Nós</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0d0d0d; color: #f0f0f0; }
+    </style>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!-- 1. HEADER OBRIGATÓRIO -->
+    <header id="main-header" class="bg-black/80 shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center h-20">
+            <a href="index.html" class="text-3xl font-bold text-white hover:text-gray-300 transition">
+                Corpus Cult
+            </a>
+            <!-- 2. NAV DE NAVEGAÇÃO OBRIGATÓRIA -->
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6 text-lg" id="desktop-menu">
+                    <li><a href="index.html" class="hover:text-green-500 transition">Início</a></li>
+                    <li><a href="sobre.html" class="text-green-500 transition">Sobre</a></li>
+                    <li><a href="contato.html" class="hover:text-green-500 transition">Contato</a></li>
+                </ul>
+            </nav>
+            <button id="menu-toggle" class="md:hidden text-white p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 transition">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+            </button>
+        </div>
+        <nav id="mobile-menu" class="hidden md:hidden absolute w-full bg-black/90 shadow-2xl transition-all duration-300">
+            <ul class="flex flex-col text-center py-4 space-y-2 text-xl border-t border-gray-800">
+                <li><a href="index.html" class="block py-2 hover:bg-gray-800 hover:text-green-500 transition">Início</a></li>
+                <li><a href="sobre.html" class="block py-2 hover:bg-gray-800 hover:text-green-500 transition">Sobre</a></li>
+                <li><a href="contato.html" class="block py-2 hover:bg-gray-800 hover:text-green-500 transition">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 3. MAIN DE CONTEÚDO PRINCIPAL OBRIGATÓRIO -->
+    <main class="container mx-auto px-4 py-12 min-h-screen">
+        <h1 class="text-4xl font-bold text-green-500 mb-8 text-center">Nossa História e Missão</h1>
+
+        <section class="bg-gray-900 p-8 rounded-xl shadow-2xl mb-12">
+            <p class="text-lg text-gray-400 mb-6">Fundado em 2015, a Corpus Cult nasceu da paixão em unir arte e pele. Acreditamos que cada tatuagem é uma história, uma marca de identidade, e nossa missão é transformar essas visões em obras de arte seguras e duradouras, sempre com o máximo de higiene e profissionalismo.</p>
+            <p class="text-lg text-gray-400">Nossa equipe é composta por artistas dedicados a diversos estilos, garantindo que o seu projeto será executado por um especialista. Venha nos visitar e conhecer o ambiente!</p>
+        </section>
+
+        <!-- USO DE TABELA OBRIGATÓRIO -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-white mb-6">Estrutura da Equipe Corpus Cult</h2>
+            <div class="overflow-x-auto bg-gray-800 rounded-xl shadow-lg">
+                <table class="min-w-full divide-y divide-gray-700">
+                    <!-- THEAD OBRIGATÓRIO -->
+                    <thead class="bg-gray-900">
+                        <tr>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">Nome</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">Função</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">Especialidade</th>
+                        </tr>
+                    </thead>
+                    <!-- TBODY OBRIGATÓRIO -->
+                    <tbody class="divide-y divide-gray-700 text-gray-300">
+                        <!-- TR e TD OBRIGATÓRIOS -->
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap">Sandro Pereira</td>
+                            <td class="px-6 py-4 whitespace-nowrap">Tatuador</td>
+                            <td class="px-6 py-4 whitespace-nowrap">Blackwork / Realismo</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap">Kaze</td>
+                            <td class="px-6 py-4 whitespace-nowrap">Tatuador</td>
+                            <td class="px-6 py-4 whitespace-nowrap">Black Work/ Fine Line</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap">Laura Sampaio</td>
+                            <td class="px-6 py-4 whitespace-nowrap">Piercing e Body Art</td>
+                            <td class="px-6 py-4 whitespace-nowrap">Microdermal / Piercing</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-green-600 text-white p-3 rounded-full shadow-lg hover:bg-green-700 transition-opacity opacity-0 invisible">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+    </button>
+
+    <!-- 4. FOOTER OBRIGATÓRIO -->
+    <footer class="bg-black/90 text-gray-400 py-8 mt-12 border-t border-gray-800">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2015 Corpus Cult. Todos os direitos reservados.</p>
+            <div class="mt-2 text-sm">
+                <a href="sobre.html" class="hover:text-green-500 mx-2">Política de Privacidade</a> | 
+                <a href="contato.html" class="hover:text-green-500 mx-2">Localização</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
+
+
+
+//contato.html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corpus Cult - Contato</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0d0d0d; color: #f0f0f0; }
+    </style>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!-- 1. HEADER OBRIGATÓRIO -->
+    <header id="main-header" class="bg-black/80 shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center h-20">
+            <a href="index.html" class="text-3xl font-bold text-white hover:text-gray-300 transition">
+                Corpus Cult
+            </a>
+            <!-- 2. NAV DE NAVEGAÇÃO OBRIGATÓRIA -->
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6 text-lg" id="desktop-menu">
+                    <li><a href="index.html" class="hover:text-green-500 transition">Início</a></li>
+                    <li><a href="sobre.html" class="hover:text-green-500 transition">Sobre</a></li>
+                    <li><a href="contato.html" class="text-green-500 transition">Contato</a></li>
+                </ul>
+            </nav>
+            <button id="menu-toggle" class="md:hidden text-white p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 transition">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+            </button>
+        </div>
+        <nav id="mobile-menu" class="hidden md:hidden absolute w-full bg-black/90 shadow-2xl transition-all duration-300">
+            <ul class="flex flex-col text-center py-4 space-y-2 text-xl border-t border-gray-800">
+                <li><a href="index.html" class="block py-2 hover:bg-gray-800 hover:text-green-500 transition">Início</a></li>
+                <li><a href="sobre.html" class="block py-2 hover:bg-gray-800 hover:text-green-500 transition">Sobre</a></li>
+                <li><a href="contato.html" class="block py-2 hover:bg-gray-800 hover:text-green-500 transition">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 3. MAIN DE CONTEÚDO PRINCIPAL OBRIGATÓRIO -->
+    <main class="container mx-auto px-4 py-12 min-h-screen">
+        <h1 class="text-4xl font-bold text-green-500 mb-8 text-center">Agendamento e Dúvidas</h1>
+
+        <section class="max-w-xl mx-auto bg-gray-900 p-8 rounded-xl shadow-2xl">
+            <!-- USO DE FORMULÁRIO OBRIGATÓRIO -->
+            <form id="contact-form" class="space-y-4">
+                <div class="form-input-group">
+                    <label for="nome" class="block text-gray-300 mb-1">Nome Completo</label>
+                    <!-- INPUT TYPE TEXT OBRIGATÓRIO COM ATRIBUTOS REQUIRED E PLACEHOLDER -->
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome aqui" required class="w-full">
+                </div>
+                
+                <div class="form-input-group">
+                    <label for="email" class="block text-gray-300 mb-1">Email</label>
+                    <!-- INPUT TYPE EMAIL OBRIGATÓRIO COM ATRIBUTOS REQUIRED E PATTERN (simples) -->
+                    <input type="email" id="email" name="email" placeholder="email@exemplo.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="w-full">
+                </div>
+
+                <div class="form-input-group">
+                    <label for="telefone" class="block text-gray-300 mb-1">Telefone (Opcional)</label>
+                    <!-- INPUT TYPE NUMBER OBRIGATÓRIO -->
+                    <input type="number" id="telefone" name="telefone" placeholder="(99) 99999-9999" class="w-full">
+                </div>
+
+                <div class="form-input-group">
+                    <label for="estilo" class="block text-gray-300 mb-1">Estilo de Tatuagem Preferido</label>
+                    <!-- SELECT E OPTION OBRIGATÓRIOS -->
+                    <select id="estilo" name="estilo" required class="w-full">
+                        <option value="">-- Selecione um Estilo --</option>
+                        <option value="realismo">Realismo</option>
+                        <option value="blackwork">Blackwork</option>
+                        <option value="aquarela">Aquarela</option>
+                        <option value="fineline">Fine Line</option>
+                        <option value="outro">Outro (Descrever abaixo)</option>
+                    </select>
+                </div>
+
+                <div class="form-input-group">
+                    <label for="mensagem" class="block text-gray-300 mb-1">Descreva sua Ideia</label>
+                    <!-- TEXTAREA OBRIGATÓRIO COM ATRIBUTO REQUIRED -->
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Tamanho, local do corpo e detalhes da arte" required class="w-full"></textarea>
+                </div>
+                
+                <button type="submit" class="w-full bg-green-600 text-white font-bold py-3 px-4 rounded-lg shadow-md hover:bg-green-700 transition transform hover:scale-[1.01]">
+                    Enviar Pedido de Orçamento
+                </button>
+
+                <!-- Div para exibir mensagens do JS -->
+                <div id="form-message"></div>
+
+            </form>
+        </section>
+
+    </main>
+
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-green-600 text-white p-3 rounded-full shadow-lg hover:bg-green-700 transition-opacity opacity-0 invisible">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+    </button>
+
+    <!-- 4. FOOTER OBRIGATÓRIO -->
+    <footer class="bg-black/90 text-gray-400 py-8 mt-12 border-t border-gray-800">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 Corpus Cult. Todos os direitos reservados.</p>
+            <div class="mt-2 text-sm">
+                <a href="sobre.html" class="hover:text-green-500 mx-2">Política de Privacidade</a> | 
+                <a href="contato.html" class="hover:text-green-500 mx-2">Localização</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
+
+
+//css
+/* ----------------------------------------------------------------
+    REQUISITOS MÍNIMOS DE CSS (Projeto Web)
+    Corpo Cult: Substituindo Vermelho por Verde
+---------------------------------------------------------------- */
+
+/* Definição de Variável CSS Opcional (Boa prática) */
+:root {
+    --primary-color: #0f9d58; /* Verde para destaque */
+    --primary-hover: #0c7b46; /* Verde mais escuro no hover */
+    --link-color: #0f9d58;
+}
+
+/* 1. SELETOR POR TAG (Obrigatório) */
+/* Aplica um estilo base a todos os links */
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilo para a Seção Hero com Imagem de Fundo (Requisito: Imagem de Fundo) */
+.hero-section {
+    background-image: url('../img/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Adiciona uma camada escura para o texto branco se destacar, como no site de referência */
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode:soft-light; /* Mistura a cor preta com a imagem */
+    min-height: 400px;
+    display: flex; /* Uso de flexbox para centralizar o conteúdo */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 2. SELETOR POR CLASSE (Obrigatório) */
+/* Estilo aplicado a qualquer elemento com a classe .artist-card-container */
+.artist-card-container {
+    /* USO DE FLEXBOX OBRIGATÓRIO */
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards quebrem a linha em telas menores */
+    justify-content: center;
+    gap: 30px; /* Espaçamento entre os cards */
+}
+
+/* 3. SELETOR POR ID (Obrigatório) */
+/* Estilo específico para o cabeçalho principal */
+#main-header {
+    border-bottom: 2px solid var(--primary-color); /* Linha sutil para destaque */
+}
+
+/* 4. SELETOR DESCENDENTE (Obrigatório) */
+/* Seleciona todos os links <a> que estão dentro do rodapé <footer> */
+footer a {
+    color: #f0f0f0;
+    transition: color 0.3s ease;
+}
+
+/* 5. SELETOR DE FILHO (>) (Obrigatório) */
+/* Seleciona apenas os <li> que são filhos diretos da ul#desktop-menu */
+#desktop-menu > li {
+    padding: 0 5px;
+}
+
+/* 6. PSEUDO-CLASSE :HOVER (Obrigatório - Mínimo 1 Avançado) */
+/* Efeito de destaque ao passar o mouse sobre links no rodapé */
+footer a:hover {
+    color: var(--primary-color); 
+    text-decoration: underline;
+}
+
+/* Exemplo de Estilização de Formulário (Requisito) */
+/* Estiliza o campo de input */
+.form-input-group input[type="text"], 
+.form-input-group input[type="email"],
+.form-input-group input[type="number"],
+.form-input-group textarea,
+.form-input-group select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: #1f1f1f;
+    color: #f0f0f0;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* PSEUDO-CLASSE :FOCUS (Requisito) */
+.form-input-group input:focus,
+.form-input-group textarea:focus,
+.form-input-group select:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(15, 157, 88, 0.5); /* Sombra verde */
+}
+
+/* 7. MEDIA QUERY (Opcional, mas incluído para boa prática/demonstração) */
+/* Ajusta o tamanho da fonte do título principal em telas menores */
+@media (max-width: 640px) {
+    #main-header .text-3xl {
+        font-size: 1.75rem; /* 28px */
+    }
+}
+
+
+//js
+// ----------------------------------------------------------------
+// REQUISITOS MÍNIMOS DE JAVASCRIPT (Projeto Web)
+// Implementação de 3 interações e requisitos obrigatórios
+// ----------------------------------------------------------------
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    // 1. MANIPULAÇÃO DE ELEMENTOS (document.querySelector, addEventListener)
+    
+    // Elementos do Menu Mobile (Interação 1)
+    const menuToggle = document.querySelector('#menu-toggle');
+    const mobileMenu = document.querySelector('#mobile-menu');
+
+    // Botão Voltar ao Topo (Interação 2)
+    const backToTopButton = document.querySelector('#back-to-top');
+
+    // Formulário (para Interação 3) - Usando querySelector para buscar o elemento na página de contato
+    const contactForm = document.querySelector('#contact-form');
+
+    
+    // ===================================================
+    // INTERAÇÃO 1: ABRIR/FECHAR MENU MOBILE (EVENTO CLICK)
+    // ===================================================
+    if (menuToggle && mobileMenu) {
+        menuToggle.addEventListener('click', () => {
+            // Alterna a visibilidade da classe 'hidden'
+            // O uso de classList.toggle demonstra a manipulação de classes
+            mobileMenu.classList.toggle('hidden');
+        });
+    }
+
+    
+    // ===================================================
+    // INTERAÇÃO 2: BOTÃO VOLTAR AO TOPO (EVENTO SCROLL)
+    // ===================================================
+    // EVENTO de SCROLL para mostrar/esconder o botão
+    window.addEventListener('scroll', () => {
+        // Mostra o botão após rolar 300px
+        if (window.scrollY > 300) {
+            backToTopButton.classList.remove('invisible', 'opacity-0');
+            backToTopButton.classList.add('visible', 'opacity-100');
+        } else {
+            backToTopButton.classList.remove('visible', 'opacity-100');
+            backToTopButton.classList.add('invisible', 'opacity-0');
+        }
+    });
+
+    // EVENTO de CLICK para rolar para o topo
+    if (backToTopButton) {
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // Rola suavemente
+            });
+        });
+    }
+
+
+    // ===================================================
+    // INTERAÇÃO 3: VALIDAÇÃO ADICIONAL DE FORMULÁRIO (EVENTO SUBMIT)
+    // ===================================================
+    if (contactForm) {
+        // EVENTO SUBMIT (obrigatório)
+        contactForm.addEventListener('submit', (event) => {
+            event.preventDefault(); // Impede o envio padrão
+
+            // EXEMPLO DE MANIPULAÇÃO DE CONDIÇÕES (if/else)
+            const nome = document.querySelector('#nome').value.trim();
+            const email = document.querySelector('#email').value.trim();
+            const estilo = document.querySelector('#estilo').value;
+            const mensagem = document.querySelector('#mensagem').value.trim();
+            const resultado = document.querySelector('#form-message'); // Elemento para feedback
+
+            let isValid = true;
+            let feedback = '';
+
+            if (nome.length < 3) {
+                isValid = false;
+                feedback += 'Nome deve ter pelo menos 3 caracteres.<br>';
+            }
+
+            // Simples verificação de e-mail (além da validação HTML5)
+            if (!email.includes('@') || !email.includes('.')) {
+                isValid = false;
+                feedback += 'Por favor, insira um e-mail válido.<br>';
+            }
+            
+            if (estilo === '') {
+                isValid = false;
+                feedback += 'Por favor, selecione um estilo de tatuagem.<br>';
+            }
+
+            if (isValid) {
+                // Se válido, simula o envio e limpa o formulário
+                feedback = 'Mensagem enviada com sucesso! Em breve entraremos em contato.';
+                resultado.className = 'mt-4 p-3 bg-green-600 text-white rounded-lg text-center';
+                contactForm.reset();
+            } else {
+                // Se inválido, exibe as mensagens de erro
+                resultado.className = 'mt-4 p-3 bg-red-600 text-white rounded-lg'; // Mantendo o erro em vermelho para contraste
+            }
+
+            // USO DE innerHTML (obrigatório) para exibir o resultado
+            resultado.innerHTML = feedback;
+        });
+    }
+
+    // ===================================================
+    // REQUISITOS ADICIONAIS DE JS: ARRAYS E OBJETOS
+    // ===================================================
+
+    // Array de Objetos para armazenar dados (Obrigatório)
+    const artistas = [
+        { nome: 'Kaique "The Shadow"', especialidade: 'Blackwork', email: 'kaique@corpustcult.com' },
+        { nome: 'Julia "Ink Flow"', especialidade: 'Aquarela', email: 'julia@corpustcult.com' },
+        { nome: 'Ramon "Geometric"', especialidade: 'Geométrico', email: 'ramon@corpustcult.com' }
+    ];
+
+    // Exemplo de Função com Loop (for, forEach ou map) e Condicional (if)
+    function buscarArtistaPorEspecialidade(especialidade) {
+        // USO DE LOOP (forEach)
+        let encontrados = [];
+        artistas.forEach(artista => {
+            // USO DE CONDICIONAL (if)
+            if (artista.especialidade === especialidade) {
+                encontrados.push(artista.nome);
+            }
+        });
+        
+        // Exemplo de log para demonstrar a função
+        console.log(`[Corpus Cult] Artistas em ${especialidade}:`, encontrados);
+        return encontrados;
+    }
+
+    // Exemplo de chamada da função ao carregar a página
+    buscarArtistaPorEspecialidade('Blackwork');
+
+    // ----------------------------------------------------------------
+    // EXEMPLO DE CRIAR/ALTERAR ELEMENTOS (createElement, appendChild, textContent)
+    // ----------------------------------------------------------------
+    const footerElement = document.querySelector('footer div.text-center');
+
+    if (footerElement) {
+        // Cria um novo elemento (createElement obrigatório)
+        const versionP = document.createElement('p');
+        versionP.classList.add('text-xs', 'mt-1', 'text-gray-600');
+        
+        // Define o conteúdo (textContent obrigatório)
+        versionP.textContent = 'Corpus Cult Versão 1.0 (Projeto Base)';
+        
+        // Adiciona ao rodapé (appendChild obrigatório)
+        footerElement.appendChild(versionP);
+    }
+});
